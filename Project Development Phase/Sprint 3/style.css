@@ -1,0 +1,119 @@
+html {
+    min-height: 100%;
+    }
+    body{
+      min-height: 100%;
+      background: white;
+    }
+    body, div, form, input, select, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: darkgoldenrod;
+    }
+    h1 {
+    color: 'black;';
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+    }
+    h3 { 
+    margin: 12px 0;
+    color: darkgoldenrod;
+    }
+    .main-block {
+    justify-content: center;
+    align-items: center;
+    }
+    img {
+      padding-right: 0px;
+      padding-top: 190px;
+      width: 37%;
+      float: right;
+    }
+    form {
+    background-color: 'white;';
+    width: 900px;
+    height: 900px;
+    margin: 0;
+    padding: 30px;
+    }
+    fieldset {
+    border: none;
+    border-top: 1px solid #ffd700;
+    }
+    .account-details, .personal-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .account-details >div, .personal-details >div >div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    .account-details >div{
+    width: 100%;
+    }
+    .personal-details >div >div, input, label {
+    width: 100%;
+    }
+    label {
+    color: black;
+    padding: 0 7px;
+    text-align: right;
+    vertical-align: middle;
+    }
+    input {
+    padding: 5px;
+    vertical-align: middle;
+    }
+    .checkbox {
+    margin-bottom: 10px;
+    }
+    select, .children, .gender, .bdate-block {
+    width: calc(100% + 26px);
+    padding: 5px 0;
+    }
+    select {
+    background: transparent;
+    }
+    #smoking, #general_health, #alcohol, #mental_health, #physical_health, #sleep_time{
+      width: 20%;
+    }
+    #physical_activity, #diff_walking, #stroke, #diabetic, #asthma, #skin_cancer, #kidney_disease{
+      width: 20%;
+    }
+    button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px; 
+    border: none;
+    background: #ffe866;  
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    }
+    button:hover {
+    background: #ffd700;
+    }
+    @media (min-width: 568px) {
+    .account-details >div{
+    width: 50%;
+    }
+    .personal-details >div {
+    width: 100%;
+    }
+    label {
+    width: 40%;
+    }
+    input {
+    width: 60%;
+    }
+    select, .children, .gender, .bdate-block {
+    width: calc(60% + 16px);
+    }
+    }
